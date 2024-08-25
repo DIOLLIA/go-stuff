@@ -27,7 +27,7 @@ func createClientsMultipleRoutines() {
 		}()
 	}
 	waiting.Wait()
-	fmt.Println("Multiple routines time elapsed: ", time.Now().Sub(start))
+	fmt.Println("Multiple routines time elapsed: ", time.Since(start))
 	fmt.Println("multiMap capacity: ", len(multiMap))
 
 }

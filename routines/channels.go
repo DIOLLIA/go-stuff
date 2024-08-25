@@ -31,6 +31,6 @@ func createClientWithChannels() {
 		channelMap[pairs.login] = pairs.pwd
 	}
 
-	fmt.Println("With channels time elapsed: ", time.Now().Sub(start))
+	fmt.Println("With channels time elapsed: ", time.Since(start))
 	fmt.Println("result channelMap capacity: ", len(channelMap))
 }

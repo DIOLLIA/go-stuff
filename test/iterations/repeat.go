@@ -1,7 +1,7 @@
-package iteration
+package iterations
 
-// workout/iteration       1.235s  with Builder 41332561                25.88 ns/op
-// workout/iteration       1.394s  with +=character 11218129               102.0 ns/op
+// workout/iterations       1.235s  with Builder 41332561                25.88 ns/op
+// workout/iterations       1.394s  with +=character 11218129               102.0 ns/op
 func Repeat(seriesCounter int, character string) string {
 	//var builder strings.Builder
 	var result string

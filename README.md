@@ -8,5 +8,5 @@
     - `go doc` from standard library
 - linters:
     - github.com/kisielk/errcheck@latest for checking for unchecked errors in Go code. 
-    - coverage of code with tests: go test -cover . 
+    - testing functions: `go test -cover .` `go test -bench .` (see the concurrency or iterations examples), etc 
     - golangci-lint - fast linters runner for Go

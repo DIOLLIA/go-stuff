@@ -2,7 +2,7 @@ package concurrency
 
 /*type WebsiteChecker func(string) bool
 
-// use go test -race to get some reasons
+// use go tdd -race to get some reasons
 func CheckWebsites(wc WebsiteChecker, urls []string) map[string]bool {
 	results := make(map[string]bool)
 

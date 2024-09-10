@@ -38,11 +38,9 @@ func CheckWebsitesDeclared(wc WebsiteCheckerDeclared, urls []string) map[string]
 
 func checkWebSite(wg *sync.WaitGroup, mu *sync.Mutex, results map[string]bool, wc WebsiteCheckerDeclared, url string) {
 	wg.Add(1)
-	go func(uri string) {
-		defer wg.Done()
-		result := wc(uri)
-		mu.Lock()
-		results[uri] = result
-		mu.Unlock()
-	}(url)
+	defer wg.Done()
+	result := wc(url)
+	mu.Lock()
+	results[url] = result
+	mu.Unlock()
 }

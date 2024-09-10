@@ -35,7 +35,7 @@ func TestArea(t *testing.T) {
 	})
 }
 
-// the same as previous test but using table driven! tests
+// the same as previous tdd but using table driven! tests
 func TestAreaAnonymousStruct(t *testing.T) {
 	areaTest := []struct { //anonymous struct
 		shape    Shape

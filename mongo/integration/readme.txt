@@ -1,0 +1,1 @@
+Try mongo with go in docker container with docker-compose
